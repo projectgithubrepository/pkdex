@@ -1,0 +1,31 @@
+{% extends "model-page.html" %}
+
+{% block content %}
+
+<div id="divbutao">
+    <a href="/">
+        <button type="button">voltar</button>
+    </a>
+</div>
+
+<br><br>
+
+<div id="box">
+<ul>
+    <li>{{ nome_pkm }} </li>
+    <li> {{ tipo_pkm }} </li>
+    <li>{{ golpes_pkm }} </li>
+    <li>{{ stats_pkm }} </li>
+    <li>{{ altura_pkm }} </li>
+    <li>{{ peso_pkm }} </li>
+</ul>
+</div>
+
+<div id="imagens">
+    <div id="pokeball">
+    {% include "pokeball.html" %}
+    </div>
+    <img id="foto_pkm" src="{{ foto_pkm }}"> </img>
+</div>
+
+{% endblock %}

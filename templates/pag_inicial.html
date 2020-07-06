@@ -1,0 +1,11 @@
+{% extends "model-page.html" %}
+
+{% block content %}
+
+<form action="/resultado/" method="POST" name="busca_num" id="formulario">
+    <label>Escolha de 1 a 151:</label>
+    <br><br>
+    <input id="caixa_texto" type="text" name="insere_num" size="5">
+    <input type="submit" value="Busca">
+</form>
+{% endblock %}
